@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <meta
+    name="description"
+    content="Strange Attractors — a podcast and blog exploring the intersections of environment, technology, and anthropology."
+  />
+
+  <title>Strange Attractors</title>
+
+  <link
+    rel="icon"
+    type="image/png"
+    href="assets/favicon.png"
+  />
+
+  <link
+    rel="stylesheet"
+    href="style.css"
+  />
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <header class="site-header">
+
+    <nav>
+      <a href="#episodes">episodes</a>
+      <a href="#blog">blog</a>
+    </nav>
+
+  </header>
+
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero">
+
+      <div class="hero-copy">
+
+        <p class="eyebrow">
+          sanjaya haritsa
+        </p>
+
+        <h1>
+          strange<br>
+          attractors
+        </h1>
+
+        <p class="hero-description">
+          <i>podcast &amp; blog exploring the intersections of
+          environment, technology, and anthropology.</i>
+        </p>
+
+        <button
+          class="primary-button"
+          id="heroPlayButton"
+        >
+          <span class="play-symbol">▶</span>
+          start listening
+        </button>
+
+      </div>
+
+
+      <div class="hero-art-wrapper">
+
+        <img
+          class="hero-art"
+          src="assets/cover.jpg"
+          alt="Strange Attractors podcast cover"
+        />
+
+      </div>
+
+    </section>
+
+
+    <!-- EPISODES -->
+    <section
+      class="episodes-section"
+      id="episodes"
+    >
+
+      <div class="section-heading">
+
+        <p class="eyebrow">
+          a collection of rabbit holes
+        </p>
+
+        <h2>
+          episodes
+        </h2>
+
+      </div>
+
+
+      <!-- Generated automatically by script.js -->
+      <div
+        class="episode-list"
+        id="episodeList"
+      ></div>
+
+    </section>
+
+
+    <!-- BLOG -->
+    <section
+      class="blog-section"
+      id="blog"
+    >
+
+      <div class="section-heading">
+
+        <p class="eyebrow">
+          written observations
+        </p>
+
+        <h2>
+          blog
+        </h2>
+
+      </div>
+
+      <div
+        class="blog-list"
+        id="blogList"
+      ></div>
+
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer>
+    <span>created, hosted, & produced by sanjaya haritsa</span>
+    <span>© 2026</span>
+  </footer>
+
+
+  <!-- AUDIO PLAYER -->
+  <div
+    class="player-shell"
+    id="playerShell"
+  >
+
+    <div class="player">
+
+
+      <!-- NOW PLAYING -->
+      <div class="now-playing">
+
+        <img
+          id="playerArtwork"
+          src="assets/cover.jpg"
+          alt=""
+        />
+
+        <div class="now-playing-text">
+
+          <span class="now-playing-label">
+            NOW PLAYING
+          </span>
+
+          <span id="playerTitle">
+            select an episode
+          </span>
+
+        </div>
+
+      </div>
+
+
+      <!-- CENTER CONTROLS -->
+      <div class="player-center">
+
+        <div class="transport-controls">
+
+          <button
+            class="icon-button"
+            id="rewindButton"
+            aria-label="Rewind 15 seconds"
+            title="Rewind 15 seconds"
+          >
+            −15
+          </button>
+
+
+          <button
+            class="main-play-button"
+            id="playPauseButton"
+            aria-label="Play"
+          >
+            ▶
+          </button>
+
+
+          <button
+            class="icon-button"
+            id="forwardButton"
+            aria-label="Forward 15 seconds"
+            title="Forward 15 seconds"
+          >
+            +15
+          </button>
+
+        </div>
+
+
+        <div class="progress-row">
+
+          <span id="currentTime">
+            0:00
+          </span>
+
+          <input
+            type="range"
+            id="progressBar"
+            min="0"
+            max="100"
+            value="0"
+            step="0.1"
+            aria-label="Episode progress"
+          />
+
+          <span id="duration">
+            0:00
+          </span>
+
+        </div>
+
+      </div>
+
+
+      <!-- SPEED -->
+      <div class="player-options">
+
+        <button
+          id="speedControl"
+          type="button"
+          aria-label="Change playback speed"
+          title="Change playback speed"
+        >
+          1×
+        </button>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+
+  <audio
+    id="audio"
+    preload="metadata"
+  ></audio>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
