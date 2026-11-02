@@ -19,8 +19,8 @@ const episodes = [
 
   {
     number: "02",
-    title: "trash of the west",
-    date: "2026",
+    title: "how plastic trash created china's rock movement",
+    date: "2024",
     audio: "audio/episode-02.mp3",
     artwork: "assets/cover.jpg",
     transcript: "no"
@@ -28,9 +28,191 @@ const episodes = [
 
   {
     number: "03",
-    title: "Episode 3 Title",
-    date: "2026",
+    title: "the truth about your donated clothes",
+    date: "2024",
     audio: "audio/episode-03.mp3",
+    artwork: "assets/cover.jpg",
+    transcript: "no"
+  },
+  {
+    number: "04",
+    title: "fate & the probabilistic model of the universe",
+    date: "2024",
+    audio: "audio/episode-04.mp3",
+    artwork: "assets/cover.jpg",
+    transcript: "no"
+  },
+
+  {
+    number: "05",
+    title: "peter singer's drowning child",
+    date: "2024",
+    audio: "audio/episode-05.mp3",
+    artwork: "assets/cover.jpg",
+    transcript: "no"
+  },
+
+  {
+    number: "06",
+    title: "on traffic, starlings, & fungi",
+    date: "2024",
+    audio: "audio/episode-06.mp3",
+    artwork: "assets/cover.jpg",
+    transcript: "no"
+  },
+  {
+    number: "07",
+    title: "can dreams be explained by machine learning?",
+    date: "2024",
+    audio: "audio/episode-07.mp3",
+    artwork: "assets/cover.jpg",
+    transcript: "no"
+  },
+
+  {
+    number: "08",
+    title: "is the internet already dead?",
+    date: "2025",
+    audio: "audio/episode-08.mp3",
+    artwork: "assets/cover.jpg",
+    transcript: "no"
+  },
+
+  {
+    number: "09",
+    title: "the romanticization of the american frontier",
+    date: "2025",
+    audio: "audio/episode-09.mp3",
+    artwork: "assets/cover.jpg",
+    transcript: "no"
+  },
+  {
+    number: "10",
+    title: "the nightmare of AI media literacy",
+    date: "2025",
+    audio: "audio/episode-10.mp3",
+    artwork: "assets/cover.jpg",
+    transcript: "no"
+  },
+
+  {
+    number: "11",
+    title: "the microsoft sound",
+    date: "2025",
+    audio: "audio/episode-11.mp3",
+    artwork: "assets/cover.jpg",
+    transcript: "no"
+  },
+
+  {
+    number: "12",
+    title: "design trends: machine aesthetics",
+    date: "2025",
+    audio: "audio/episode-12.mp3",
+    artwork: "assets/cover.jpg",
+    transcript: "no"
+  },
+  {
+    number: "13",
+    title: "the history of GIFs",
+    date: "2025",
+    audio: "audio/episode-13.mp3",
+    artwork: "assets/cover.jpg",
+    transcript: "no"
+  },
+
+  {
+    number: "14",
+    title: "14",
+    date: "2025",
+    audio: "audio/episode-14.mp3",
+    artwork: "assets/cover.jpg",
+    transcript: "no"
+  },
+
+  {
+    number: "15",
+    title: "15",
+    date: "2025",
+    audio: "audio/episode-15.mp3",
+    artwork: "assets/cover.jpg",
+    transcript: "no"
+  },
+  {
+    number: "16",
+    title: "16",
+    date: "2026",
+    audio: "audio/episode-16.mp3",
+    artwork: "assets/cover.jpg",
+    transcript: "no"
+  },
+
+  {
+    number: "17",
+    title: "17",
+    date: "2026",
+    audio: "audio/episode-17.mp3",
+    artwork: "assets/cover.jpg",
+    transcript: "no"
+  },
+
+  {
+    number: "18",
+    title: "18",
+    date: "2026",
+    audio: "audio/episode-18.mp3",
+    artwork: "assets/cover.jpg",
+    transcript: "no"
+  },
+  {
+    number: "19",
+    title: "19",
+    date: "2026",
+    audio: "audio/episode-19.mp3",
+    artwork: "assets/cover.jpg",
+    transcript: "no"
+  },
+
+  {
+    number: "20",
+    title: "20",
+    date: "2026",
+    audio: "audio/episode-20.mp3",
+    artwork: "assets/cover.jpg",
+    transcript: "no"
+  },
+
+  {
+    number: "21",
+    title: "21",
+    date: "2026",
+    audio: "audio/episode-21.mp3",
+    artwork: "assets/cover.jpg",
+    transcript: "no"
+  },
+  {
+    number: "22",
+    title: "did chatgpt just commit a felony?",
+    date: "2026",
+    audio: "audio/episode-22.mp3",
+    artwork: "assets/cover.jpg",
+    transcript: "no"
+  },
+
+  {
+    number: "23",
+    title: "23",
+    date: "2026",
+    audio: "audio/episode-23.mp3",
+    artwork: "assets/cover.jpg",
+    transcript: "no"
+  },
+
+  {
+    number: "24",
+    title: "24",
+    date: "2026",
+    audio: "audio/episode-24.mp3",
     artwork: "assets/cover.jpg",
     transcript: "no"
   }
@@ -103,6 +285,9 @@ const heroPlayButton =
 
 const playerShell =
   document.getElementById("playerShell");
+
+const episodeScrollHint =
+  document.getElementById("episodeScrollHint");
 
 
 /* ------------------------------------------------------------
@@ -1613,6 +1798,10 @@ setMediaHandler(
 ============================================================ */
 
 renderEpisodes();
+
+if (episodes.length <= 3) {
+  episodeScrollHint.classList.add("hidden");
+}
 
 renderBlogPosts();
 
