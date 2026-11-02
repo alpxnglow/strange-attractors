@@ -773,6 +773,48 @@ a {
   white-space: pre-wrap;
 }
 
+/* ============================================================
+   ABOUT
+============================================================ */
+
+.about-section {
+  max-width: var(--max-width);
+  margin: auto;
+
+  padding: 45px 30px 100px;
+
+  border-top: 1px solid var(--line);
+}
+
+
+.about-copy {
+  max-width: 780px;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: clamp(
+    1.15rem,
+    2vw,
+    1.4rem
+  );
+
+  line-height: 1.65;
+
+  color: #d6d0c7;
+}
+
+
+.about-copy p {
+  margin: 0 0 26px;
+}
+
+
+.about-copy p:last-child {
+  margin-bottom: 0;
+}
 
 /* ============================================================
    FOOTER
@@ -1278,10 +1320,11 @@ input[type="range"] {
   /* HERO */
 
   .hero,
-  .episodes-section{
+  .episodes-section,
+  .about-section {
     padding-left: 18px;
     padding-right: 18px;
-  }
+    }
 
 
   .hero {

@@ -19,7 +19,7 @@ const episodes = [
 
   {
     number: "02",
-    title: "Episode 2 Title",
+    title: "trash of the west",
     date: "2026",
     audio: "audio/episode-02.mp3",
     artwork: "assets/cover.jpg",
