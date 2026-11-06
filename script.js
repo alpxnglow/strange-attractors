@@ -28,7 +28,7 @@ const episodes = [
 
   {
     number: "03",
-    title: "the truth about your donated clothes",
+    title: "can dreams be explained by machine learning?",
     date: "2024",
     audio: "audio/episode-03.mp3",
     artwork: "assets/cover.jpg",
@@ -36,7 +36,7 @@ const episodes = [
   },
   {
     number: "04",
-    title: "fate & the probabilistic model of the universe",
+    title: "the truth about your donated clothes",
     date: "2024",
     audio: "audio/episode-04.mp3",
     artwork: "assets/cover.jpg",
@@ -62,7 +62,7 @@ const episodes = [
   },
   {
     number: "07",
-    title: "can dreams be explained by machine learning?",
+    title: "fate & the probabilistic model of the universe",
     date: "2024",
     audio: "audio/episode-07.mp3",
     artwork: "assets/cover.jpg",
@@ -97,7 +97,7 @@ const episodes = [
 
   {
     number: "11",
-    title: "the microsoft sound",
+    title: "the microsoft startup sound",
     date: "2025",
     audio: "audio/episode-11.mp3",
     artwork: "assets/cover.jpg",
@@ -123,7 +123,7 @@ const episodes = [
 
   {
     number: "14",
-    title: "14",
+    title: "how tech companies steal from video games",
     date: "2025",
     audio: "audio/episode-14.mp3",
     artwork: "assets/cover.jpg",
@@ -132,7 +132,7 @@ const episodes = [
 
   {
     number: "15",
-    title: "15",
+    title: "breath of the wild: a masterclass in sound design",
     date: "2025",
     audio: "audio/episode-15.mp3",
     artwork: "assets/cover.jpg",
@@ -140,7 +140,7 @@ const episodes = [
   },
   {
     number: "16",
-    title: "16",
+    title: "proximity voice chat in horror games",
     date: "2026",
     audio: "audio/episode-16.mp3",
     artwork: "assets/cover.jpg",
@@ -149,7 +149,7 @@ const episodes = [
 
   {
     number: "17",
-    title: "17",
+    title: "what if smartphones never existed?",
     date: "2026",
     audio: "audio/episode-17.mp3",
     artwork: "assets/cover.jpg",
@@ -158,7 +158,7 @@ const episodes = [
 
   {
     number: "18",
-    title: "18",
+    title: "why is gen z so obsessed with retro?",
     date: "2026",
     audio: "audio/episode-18.mp3",
     artwork: "assets/cover.jpg",
@@ -184,7 +184,7 @@ const episodes = [
 
   {
     number: "21",
-    title: "21",
+    title: "why is everyone so obsessed with claude code?",
     date: "2026",
     audio: "audio/episode-21.mp3",
     artwork: "assets/cover.jpg",
